@@ -1,10 +1,58 @@
-<h1>edit profile</h1>
-<form action = "/Kanbas/Account/Profile/screen.html ">  
-Name:<input type="text"  value="levi"/><br/>
-Biography:<br/>
-<textarea>
-    this is the biography of levi
-</textarea>
-<button>save</button>
-<button>cancel</button>
-</form>
+<h1>Wenhu Cheng</h1>
+
+<div>
+    <strong>Name:</strong>
+    <span>wenhu cheng</span>
+</div>
+
+<div>
+    <strong>Pronunciation:</strong>
+    <span>
+        <select>
+            <option value="none">None</option>
+            <option value="theythem">They/Them</option>
+        </select>
+    </span>
+</div>
+
+<div>
+    <strong>Title:</strong>
+    <input type="text">
+</div>
+
+<div>
+    <strong>Contact:</strong>
+    <p>No registered service</p>
+</div>
+
+<div>
+    <strong>Biography:</strong>
+    <textarea cols = "30" rows = "10">
+this is the biography of levi
+    </textarea>
+</div>
+
+<div>
+    <strong>Links:</strong>
+    <div>
+        <label for="titleLink">Title:</label>
+        <input type="text" id="titleLink">
+    </div>
+    
+    <div>
+        <label for="url">URL:</label>
+        <input type="text" id="url">
+    </div>
+    
+    <button type="button">Add another link</button>
+</div>
+
+<div>
+    <a href="/Kanbas/Account/Profile/screen.html" style="text-decoration: none;">
+        <button>Cancel Editing</button>
+    </a>
+    <a href="/Kanbas/Account/Profile/screen.html" style="text-decoration: none;">
+        <button>Save Profile</button>
+    </a>
+</div>
+
