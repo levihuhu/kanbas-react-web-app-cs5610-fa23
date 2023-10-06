@@ -1,0 +1,24 @@
+/* Change color of the active breadcrumb item to grey */
+.breadcrumb-item.active {
+    color: grey; 
+}
+/* Ensure breadcrumb separator (the > symbol) is displayed */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+
+/* Change color of breadcrumb links */
+.breadcrumb-item a {
+    color: red;  /* adjust as needed */
+}
+
+/* If you want to change the active item's color as well */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.checked {
+    color: green;
+}
+

@@ -1,0 +1,42 @@
+body {
+    margin:0;
+    padding: 0;
+
+}
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wd-flex-row-container{
+    display: flex;
+    flex-direction: row;
+}
+.wd-flex-grow-1{
+    flex-grow: 1;
+}
+.wd-fg-color-white{
+    color: white;
+}
+.wd-fg-color-blue{
+    color: blue;
+}
+.wd-main-css-heading{
+    color:green;
+    background-color: thistle;
+}
+.wd-bg-color-pink{
+    background-color: pink;
+}
+.wd-bg-color-purple{
+    background-color: purple;
+}
+.wd-bg-color-peachpuff{
+    background-color: peachpuff;
+}
+.wd-bg-color-powderblue{
+    background-color: powderblue;
+}
+.wd-bg-color-black{
+    background-color: black;
+}

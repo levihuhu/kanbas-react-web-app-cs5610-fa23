@@ -1,0 +1,29 @@
+.user-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin: 10px 0;  /* Adjust as needed */
+    width: 100%;
+}
+
+.btn-outline-secondary {
+    background-color: #f5f5f5;  /* Light grey background for edit button */
+}
+
+.btn-danger {
+    background-color: red;  /* Red background for Save Profile button */
+}
+.btn-outline-secondary{
+   margin-left: 20px;
+}
+.user-section{
+    margin-right: 300px;
+    text-align: left;
+   
+   
+    align-items: left;     /* Aligns items horizontally in the center */
+    justify-content: left; /* Aligns items vertically in the center */
+    margin-bottom: 20px;
+}
