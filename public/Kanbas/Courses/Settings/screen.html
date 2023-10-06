@@ -1,147 +1,22 @@
-<table border = "1" width = "100%" >
-    <tr>
-        <td  valign = "top">
-              <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/DashBoard/screen.html">DashBoard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li> 
-                <li><a  href="#">Calendar</a></li>  
-                <li><a  href="#">Inbox</a></li>  
-                <li><a   href="#">History</a></li>  
-                <li><a   href="#">Studio</a></li>  
-                <li><a  href="#">Communication</a></li>  
-                <li><a  href="#">help</a></li>  
-              
-                
+<html>
+    <head>
+  <link rel="stylesheet" href= "/styles.css" />
+  <link rel="stylesheet" href= "/Kanbas/KanbasNavigation/index.css" />
+  <link rel="stylesheet" href= "/Kanbas/Courses/CourseNavigation/index.css" />
+  <link rel = "stylesheet" href = "/lib/font-awsome/css/font-awesome.css"/>
+  <link rel="stylesheet" href= "/lib/bootstrap/bootstrap.min.css" />
 
-        </td>
-        <td   valign = "top" >
-                  <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li> 
-                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li> 
-                <li><a  href="#">Zoom</a></li>  
-                <li><a  href="#">Piazza</a></li>  
-                <li><a  href="#">People</a></li>  
-                <li><a  href="#">Rubircs</a></li>
-                <li><a  href="#">Files</a></li>  
-                <li><a  href="#">Pages</a></li>    
-        </td>
-        <td>
-            <a href="/Kanbas/Courses/Settings/screen.html">Course Details</a></li>
-            <a href="/Kanbas/Courses/Settings/screen.html">Sections</a></li>
-            <a href="/Kanbas/Courses/Settings/navigation.html">Navigations</a></li>
-            <a href="/Kanbas/Courses/Settings/screen.html">Apps</a></li>
-            <a href="/Kanbas/Courses/Settings/screen.html">Feature Options</a></li>
-            <a href="/Kanbas/Courses/Settings/screen.html">Intergration</a></li>
-            <h1>Course Details</h1>
+  <link rel="stylesheet" href= "./index.css" />
+    </head>
+    <body >
+        <div id = "root" ></div>
+        <script type = "module">
+           import Home from "./home.js";
+           const html = Home();
+           const root = document.getElementById("root");
+              root.innerHTML = html;
 
-            <!-- Image -->
-            <!-- Image Upload -->
-<label for="courseImage"> Image:</label>
-<input type="file" id="courseImage" name="courseImage" accept="image/*">
+        </script>
 
-            
-            <!-- Course Name -->
-            <p><strong>Name:</strong> CS5610</p>
-            
-            <!-- Course Code -->
-            <p><strong>Course Code:</strong> 5601</p>
-            
-            <!-- Timezone -->
-            <p>
-                <strong>Timezone:</strong>
-                <select>
-                    <option value="eastern">Eastern Timezone</option>
-                    <!-- Add more timezones here -->
-                </select>
-            </p>
-            
-            <!-- SIS ID -->
-            <p><strong>SIS ID:</strong> 2050</p>
-            
-            <!-- Term -->
-            <p>
-                <strong>Term:</strong>
-                <select>
-                    <option value="fall2020">Fall 2020</option>
-                    <!-- Add more terms here -->
-                </select>
-            </p>
-            
-            <!-- Participation -->
-            <p>
-                <strong>Participation:</strong>
-                <select>
-                    <option value="participation">Term</option>
-                    <!-- Add more participation types here -->
-                </select>
-            </p>
-            
-            <!-- Start Date -->
-            <!-- Start Date -->
-<label for="startDate">Start Date:</label>
-<input type="date" id="startDate" name="startDate">
-
-<!-- End Date -->
-<label for="endDate">End Date:</label>
-<input type="date" id="endDate" name="endDate">
-
-            
-            <!-- Default Time Zone -->
-            <p>
-                <strong>Default Time Zone:</strong>
-                <select>
-                    <option value="default">Default Time Zone 11:59pm</option>
-                    <!-- Add more time zones here -->
-                </select>
-            </p>
-            
-            <!-- Language -->
-            <p>
-                <strong>Language:</strong>
-                <select>
-                    <option value="english">English</option>
-                    <!-- Add more languages here -->
-                </select>
-            </p>
-            
-            <!-- File Storage -->
-            <p><strong>File Storage:</strong> 100000MB</p>
-            
-            <!-- Large Course Checkbox -->
-            <p>
-                <strong>Large Course:</strong>
-                <input type="checkbox" name="largeCourse" value="yes">is this a large course</input>
-            </p>
-            
-            <!-- Grading Scheme Checkbox -->
-            <p>
-                <strong>Grading Scheme:</strong>
-                <input type="checkbox" name="gradingScheme" value="yes">Grading Scheme is standard</input>
-            </p>
-            
-            <!-- File Copyright Checkbox -->
-            <p>
-                <strong>File Copyright:</strong>
-                <input type="checkbox" name="fileCopyright" value="authorized">authorized copyright</input>
-            </p>
-            
-            <!-- Format -->
-            <p>
-                <strong>Format:</strong>
-                <select>
-                    <option value="oncampus">On Campus</option>
-                    <option value="oncampus">online</option>
-                    <!-- Add more formats here -->
-                </select></br></br>
-                <table>
-                    <tr>
-                        <td valign="middle">Description:</td>
-                        <td><textarea rows="4" cols="50">enter the description here</textarea></td>
-                    </tr>
-                </table>
-                
-
-            </  
-        </td>
+</body>
+</html>

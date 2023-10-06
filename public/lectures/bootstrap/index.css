@@ -1,0 +1,59 @@
+.wd-drop-down{
+    margin-bottom: 100px;
+}
+.wd-kanbas-navigation.list-group-item.active {
+    z-index: 2;
+    color: white;
+    background-color: black;
+    border-color: white;
+    border-left:5px solid black;
+    margin-left :3px;
+}
+.wd-kanbas-navigation.list-group{
+    border-radius: 0%;
+
+}
+.wd-kanbas-navigation.list-group-item {
+   
+    color: gray;
+    text-decoration: none;
+    background-color: white;
+    border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+}
+
+
+
+
+
+
+.wd-course-navigation.list-group-item.active {
+    z-index: 2;
+    color: black;
+    background-color: white;
+    border-color: white;
+    border-left:5px solid black;
+    margin-left :3px;
+}
+.wd-course-navigation.list-group{
+    border-radius: 0%;
+}
+.wd-course-navigation.list-group-item {
+   
+    color: red;
+    text-decoration: none;
+    background-color: white;
+    border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+}
+.wd-dashboard{
+    width: 300px;
+}
+.wd-dashboard-grid.col{
+    width: 10px;
+    background-color: black;
+}
+.nav-item{
+    color:red
+}
+.nav-link{
+    color:red
+}

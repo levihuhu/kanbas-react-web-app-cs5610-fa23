@@ -1,0 +1,51 @@
+.wd-kanbas-navaigation{
+    background-color: black;
+    list-style: none;
+    padding: 0px;
+    width: 90px;
+    margin:0px;
+}
+.wd-kanbas-navaigation li{
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+
+}
+.wd-kanbas-navaigation li.wd-active{
+    background-color: white;
+}
+.wd-kanbas-navaigation li.wd-active a {
+    color: red;
+}
+
+
+
+.wd-kanbas-navaigation li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.wd-kanbas-navaigation a i{
+    color: red;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+/* ... your existing styles ... */
+
+/* Style for the icon */
+.wd-kanbas-navaigation .icon-wrap {
+    display: block; /* Ensure icons take up full width and push text below */
+    margin: 0 auto; /* Center the icon horizontally */
+}
+
+/* Style for the text */
+.wd-kanbas-navaigation .text-wrap {
+    display: block; /* Ensure the text is below the icon */
+}
+
+/* Adjusting the icon size and space below it */
+
+
+/* ... rest of your styles ... */
