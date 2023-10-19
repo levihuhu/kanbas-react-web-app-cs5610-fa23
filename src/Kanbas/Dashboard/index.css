@@ -1,0 +1,36 @@
+/* Give the card a white color and a rounded border */
+.custom-card {
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid lightskyblue;
+    overflow: hidden; 
+    height: 300px; /* to ensure child elements respect border-radius */
+}
+
+/* Create a blue block at the top of the card to replace the image */
+.custom-card::before {
+    content: "";
+    display: block;
+    height: 70%; /* adjust the height as needed */
+    background-color: #007BFF;
+}
+
+/* Adjustments to make text and buttons fit better inside the card */
+.custom-card .card-body {
+    padding: 1rem;
+}
+
+.custom-card .card-title {
+    font-size: 1.5rem; 
+    color: #007BFF;
+}
+
+.custom-card .card-text {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    color: #007BFF;
+}
+.btn.btn-primary{
+    color : white;
+    background-color:  #007BFF;
+}
