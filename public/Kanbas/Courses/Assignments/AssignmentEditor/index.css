@@ -1,0 +1,13 @@
+.form-control{
+    margin-bottom: 10px;
+}
+wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* adds space between the flex items */
+}
+
+.flex-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
