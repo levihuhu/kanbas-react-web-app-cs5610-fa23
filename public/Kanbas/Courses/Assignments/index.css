@@ -1,0 +1,44 @@
+.list-group-item {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    border: 1px solid #ddd;
+    
+}
+
+/* Styling for the vertical ellipses */
+.fa-ellipsis-v {
+    margin-right: 5px;
+    color: #777;
+}
+
+/* Styles for the assignment details container */
+.assignment-container {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+/* Style for the assignment title */
+.assignment-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style for the assignment details */
+.assignment-details {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 3px;
+}
+
+/* Style for the assignment points */
+.assignment-points {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Style for the book and check-circle icons */
+.fa-book, .fa-check-circle {
+    margin-right: 15px;
+}

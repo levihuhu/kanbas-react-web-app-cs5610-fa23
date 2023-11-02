@@ -1,0 +1,35 @@
+.card {
+    padding: 0 px; /* To manage space between cards */
+    margin-left:10px;
+    width: 260px;   
+    
+}
+
+.course-image {
+    width: 100%;
+    height: 150px; /* Placeholder height */
+    background-color: rgb(0, 179, 255); /* Placeholder color */
+}
+
+
+.course-grid {
+    justify-content: space-between;
+}
+.card-title {
+    font-size: 16px;  /* adjust to your preference */
+    font-weight: bold;
+    margin-bottom: 0;  /* remove extra spacing between title and text */
+}
+
+.card-text {
+    font-size: 14px;  /* adjust to your preference */
+    font-weight: normal;
+    margin-top: 5px;  /* add a little space between title and text */
+    color:grey
+}
+
+
+
+
+
+

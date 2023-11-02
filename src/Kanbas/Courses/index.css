@@ -1,0 +1,36 @@
+.breadcrumb-style {
+    display: flex;
+    align-items: center;
+    font-weight: bold;   /* makes the font thicker */
+    color: #d9534f; 
+    
+        /* red color like in the picture */
+}
+
+.breadcrumb-style span {
+    margin: 0 0.5rem;   /* add space between each item */
+}
+
+.breadcrumb-style .screen {
+    margin: 0 0.5rem;   /* add space between each item */
+    color: black;
+}
+.separator {
+    font-size: 1.5rem;  /* make the > symbol larger */
+}
+.breadcrumb-style .course-number {
+    font-size: 0.8rem;   
+}
+.module-content {
+    flex-grow: 1;
+   
+  }
+  .module-description {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  .module-title {
+    margin: 0;
+  }
+  
