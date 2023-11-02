@@ -2,11 +2,14 @@ import{Routes,Route,Link,useLocation,Navigate} from "react-router-dom";
 import Assignment3 from "./a3";
 import Assignment4 from "./a4";
 import Assignment5 from "./a5";
+import store from "./store";
+import {Provider} from "react-redux";
 
 
 function Labs() {
   const { pathname } = useLocation();
   return (
+    <Provider store = {store}>
     <div className="container">
       <h1>Labs</h1>
       
@@ -33,6 +36,7 @@ function Labs() {
        </Routes>
 
     </div>
+    </Provider>
   );
 }
 export default Labs;

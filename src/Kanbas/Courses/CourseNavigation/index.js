@@ -5,6 +5,7 @@ function CourseNavigation() {
   const links = ["Home", "Modules", "Assignments", "Grades","Zoom","Quizzes" ,"Discussions","People","Files","Syllabus"];
   const { courseId } = useParams();
   const { pathname } = useLocation();
+  
   return (
     <div className="wd-course-navigation list-group" style={{ width: 150 }}>
       {links.map((link, index) => (

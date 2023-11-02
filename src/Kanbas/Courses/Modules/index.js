@@ -14,7 +14,7 @@ function Modules() {
       <option>Publish All</option>
 
       <option>Publish All Items And Modules</option>
-      <span>  <FcCheckmark/></span>
+
         <option>Unpublish</option>
     </select>
     <button className="btn btn-red">+ Module</button>

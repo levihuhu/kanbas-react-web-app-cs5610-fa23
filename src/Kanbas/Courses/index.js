@@ -6,17 +6,19 @@ import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
-import AssignmentEditor from "./Assignments/AssignmentEditor";
+import AssignmentEditor from "./Assignments/AssignmentEditor/index.js";
+import AssignmentEditor1 from "./Assignments/AssignmentEditor/AssignmentEditor.js";
 import Grades from "./Grades";
 import  "./index.css";
 
 import{IoReorderThree} from "react-icons/io5";
 
-function Courses() {
+function Courses({courses}) {
   const { courseId } = useParams();
   const {pathname} = useLocation();
-  const [empty, kanbas, courses, id, screen] = pathname.split("/");
-  const course = db.courses.find((course) => course._id === courseId);
+  const [empty, kanbas,  id, screen] = pathname.split("/");
+  const course = courses.find((course) => course._id === courseId);
+
   return (
     <div>
      
@@ -45,6 +47,11 @@ function Courses() {
               path="Assignments/:assignmentId"
               element={<AssignmentEditor/>}
             />
+             <Route
+              path="Assignments/:courseId"
+              element={<AssignmentEditor1/>}
+            />
+           
             <Route path="Grades" element={<Grades/>} />
           </Routes>
         </div>

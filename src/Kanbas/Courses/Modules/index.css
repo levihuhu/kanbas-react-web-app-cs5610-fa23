@@ -60,3 +60,51 @@
     margin-left: 10px;
     color: #4caf50;
   }
+  .module-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between children */
+}
+
+.module-add-button {
+    padding: 5px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.module-delete-button {
+  padding: 5px 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.module-edit-button {
+  padding: 5px 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.module-add-button:hover {
+    background-color: #0056b3;
+}
+
+.module-input, .module-textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; /* or any desired width */
+}
+
+.module-textarea {
+    height: 60px; /* Adjust height as needed */
+}
