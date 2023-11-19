@@ -9,6 +9,7 @@ import {
  setAssignment,
 } from "../assignmentsReducer";
 import "./index.css";
+import * as client from "../client";
 
 function AssignmentEditor1() {
     const [name, setName] = useState('');
@@ -20,6 +21,15 @@ function AssignmentEditor1() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const { courseId } = useParams();
+    const [assignment, setAssignment] = useState({});
+    const [assignments, setAssignments] = useState([]);
+    
+    const addAssignment
+    = async () => {
+     const newAssignment = await client.addAssignment(courseId,assignment);
+     setAssignments([newAssignment, ...assignments]);
+     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
+   };
 
 
     const handleSubmit = () => {
@@ -47,7 +57,12 @@ function AssignmentEditor1() {
         <div className="container">
             <div>
                 <label className="label">Assignment Name:</label>
-                 <input className="input"type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+                <input
+          value={assignment.title}
+          onChange={(e) => setAssignment({ ...assignment, title: e.target.value })}
+          className="form-control"
+          placeholder="Assignment Name"
+        />
             </div>
 
             <div>
@@ -70,7 +85,7 @@ function AssignmentEditor1() {
                 <input className="input" type="date" value={availableUntilDate} onChange={(e) => setAvailableUntilDate(e.target.value)} />
             </div>
 
-            <button onClick={handleSubmit}>Save</button>
+            <button onClick={addAssignment}>Save</button>
             <button onClick={handleCancel}>Cancel</button>
         </div>
     );

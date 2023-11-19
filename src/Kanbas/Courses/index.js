@@ -1,4 +1,6 @@
-import React from "react";
+import React,{useState
+,useEffect} from "react";
+import * as client from "../Courses/client";
 import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import JsonPre from "../../Labs/a3/JsonPre";
 import db from "../Database";
@@ -13,11 +15,19 @@ import  "./index.css";
 
 import{IoReorderThree} from "react-icons/io5";
 
-function Courses({courses}) {
+function Courses() {
   const { courseId } = useParams();
   const {pathname} = useLocation();
   const [empty, kanbas,  id, screen] = pathname.split("/");
-  const course = courses.find((course) => course._id === courseId);
+  const[course,setCourse] = useState({});
+  const fetchCourse = async()=>{
+    const course = await client.fetchCourse(courseId);
+    setCourse(course);
+  };
+  useEffect
+  (()=>{
+    fetchCourse();
+  },[]);
 
   return (
     <div>

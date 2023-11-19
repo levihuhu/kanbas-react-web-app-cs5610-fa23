@@ -1,4 +1,36 @@
 /* Give the card a white color and a rounded border */
+
+.card {
+  /* You can set a specific pixel width or percentage */
+     /* And/Or you can set a max-width if you want */
+  }
+  
+  .card-header .color-picture {
+    /* Adjust the background color to the pure color you want for the picture */
+    background-color: #03775f; /* Example green color */
+    /* Add other styles like border-radius if you want rounded corners */
+  }
+  
+  .card-footer {
+    padding: .75rem 1.25rem; /* Default padding for Bootstrap card-footer */
+    background: #f8f9fa; /* Light background for the footer if needed */
+    border-top: 1px solid #e3e6f0; /* Add a border top to separate from the body if desired */
+  }
+  
+  /* Ensure buttons take full width in mobile view */
+  @media (max-width: 576px) {
+    .card-footer button {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.5rem; /* Add some margin when stacked */
+    }
+    /* Remove margin-right from edit button in mobile view */
+    .card-footer button.me-2 {
+      margin-right: 0;
+    }
+  }
+  
+
 .custom-card {
     background-color: white;
     border-radius: 15px;
@@ -15,7 +47,7 @@ a {
     content: "";
     display: block;
     height: 70%; /* adjust the height as needed */
-    background-color: #007BFF;
+    background-color: #ffa200;
 }
 
 /* Adjustments to make text and buttons fit better inside the card */
@@ -85,7 +117,7 @@ button:nth-child(2) {
 }/* Lis
 t Group Styles */
 .add-btn {
-    background-color: #4CAF50; /* Green for Add */
+    background-color: #ffa200; /* Green for Add */
     color: white;
 }
 

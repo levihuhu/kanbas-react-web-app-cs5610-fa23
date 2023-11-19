@@ -1,16 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import db from "../../Database";
+
 import "./index.css";
 import 'font-awesome/css/font-awesome.min.css';
 import  { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  addModule,
-  deleteModule,
-  updateModule,
-  setModule,
-} from "./modulesReducer";
+import * as client from "./client";
 
 
 
@@ -20,10 +15,39 @@ import {
 
 function ModuleList() {
   const { courseId } = useParams();
+  const [module, setModule] = useState({});
+  const [modules, setModules] = useState([]);
+ 
   
-  const modules = useSelector((state) => state.modulesReducer.modules);
-  const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+  
+  const addModule = async () => {
+    const newModule = await client.addModule(courseId,module);
+    setModules([newModule, ...modules]);
+   
+  };
+ 
+  const fetchModules = async () => {
+    const modules = await client.fetchModulesForCourse(courseId);
+    setModules(modules);
+  };
+
+  const deleteModule = async (moduleId) => {
+    await client.deleteModule(moduleId);
+    setModules(modules.filter((module) => module._id !== moduleId));
+  }
+  const updateModule = async () => {
+    await client.updateModule(module);
+    setModules(modules.map((m) => (m._id === module._id ? module : m)));
+  }
+
+
+ useEffect
+  (() => {
+    fetchModules();
+  }, []);
+
+
 
 
 
@@ -31,31 +55,27 @@ function ModuleList() {
 
 
   return (
+
+
+
     <div className="module-list-container">
        
        <li className="module-list-item">
    
-    <input 
-        className="module-input"
-        value={module.name}
-       
-        onChange={(e) =>
-          dispatch(setModule({ ...module, name: e.target.value }))
-        }
-    />
-    <textarea 
-        className="module-textarea"
-        value={module.description}
-        onChange={(e) =>
-          dispatch(setModule({ ...module, description: e.target.value }))
-        }
-    />
+       <input
+          value={module.name}
+          onChange={(e) => setModule({ ...module, name: e.target.value })}
+          className="form-control"
+          placeholder="Module Name"
+        />
      <button 
-               onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+               onClick={addModule}
+               className="btn btn-primary"
 
      >Add</button>
+
      <button 
-              onClick={() => dispatch(updateModule(module))}
+              onClick={updateModule}
       className="module-add-button">
                 Update
         </button>
@@ -89,13 +109,13 @@ function ModuleList() {
                 <button className="module-delete-button"
             
 
-            onClick={() => dispatch(deleteModule(module._id))}>
+                onClick={() => deleteModule(module._id)}
+                >
             
-              Delete
-            </button>
+                 Delete
+                </button>
             <button className="module-edit-button"
-               onClick={() => dispatch(setModule(module))}>
-
+               onClick={() => setModule(module)}>
               Edit
             </button>
 

@@ -8,11 +8,10 @@
   
   .assignment-detail.list-group-item-assignment {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
     padding: 15px 20px;
     border-bottom: 1px solid #e0e0e0;
-    position: relative;
+    
     font-weight: 600;
     color: #333;
     transition: background-color 0.3s;
@@ -53,9 +52,15 @@
   }
   .list-group-item-assignment {
     display: flex;
-    justify-content: space-between;
-    align-items: center; /* This ensures vertical alignment is centered */
-  }
+   /* This will align items to the right */
+}
+.list-group-item-assignment-buttons  {
+  display: flex;
+ 
+ justify-content: flex-end;
+}
+     /* This ensures vertical alignment is centered */
+  
   
   .list-group-item-assignment .assignment-details {
     flex-grow: 1; /* This allows the assignment details to take up available space */
