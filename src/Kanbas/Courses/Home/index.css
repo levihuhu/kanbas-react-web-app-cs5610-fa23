@@ -1,0 +1,55 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0; /* Optional: adds a light border to the right */
+    height: 100%; /* Adjust as needed */
+    background-color: #f9f9f9; /* Light gray background */
+  }
+  
+  .sidebar button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar button:hover {
+    background-color: #d0d0d0; /* Slightly darker on hover */
+  }
+  
+  .todo-section {
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0; /* Light border on top */
+    padding-top: 20px;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #e0e0e0; /* Light border at the bottom of each todo item */
+  }
+  
+  /* Optional: Adjust the close button for todo-items if needed */
+  .todo-item button {
+    background-color: red;
+    color: white;
+    border-radius: 50%; /* Make it circular */
+    width: 20px;
+    height: 20px;
+    line-height: 18px; /* Vertically center the "x" */
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .todo-item button:hover {
+    background-color: darkred; /* Slightly darker on hover */
+  }
+  

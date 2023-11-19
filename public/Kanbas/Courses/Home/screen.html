@@ -1,193 +1,23 @@
-<table border = "1" width = "100%" >
-    <tr>
-        <td  valign = "top">
-              <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/DashBoard/screen.html">DashBoard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li> 
-                <li><a  href="#">Calendar</a></li>  
-                <li><a  href="#">Inbox</a></li>  
-                <li><a   href="#">History</a></li>  
-                <li><a   href="#">Studio</a></li>  
-                <li><a  href="#">Communication</a></li>  
-                <li><a  href="#">help</a></li>  
-              
-                
+<html>
+    <head>
+  <link rel="stylesheet" href= "/styles.css" />
+  <link rel="stylesheet" href= "/Kanbas/KanbasNavigation/index.css" />
+  <link rel="stylesheet" href= "/Kanbas/Courses/CourseNavigation/index.css" />
+  <link rel = "stylesheet" href = "/lib/font-awsome/css/font-awesome.css"/>
+  <link rel="stylesheet" href= "/lib/bootstrap/bootstrap.min.css" />
 
-        </td>
-        <td   valign = "top" >
-                  <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li> 
-                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li> 
-                <li><a  href="#">Zoom</a></li>  
-                <li><a  href="#">Piazza</a></li>  
-                <li><a  href="#">People</a></li>  
-                <li><a  href="#">Rubircs</a></li>
-                <li><a  href="#">Files</a></li>  
-                <li><a  href="#">Pages</a></li>    
-        </td>
+  <link rel="stylesheet" href= "./index.css" />
+    </head>
+    <body >
+        <div id = "root" ></div>
+        <script type = "module">
+           import Home from "./Home.js";
+           const html = Home();
+           const root = document.getElementById("root");
+              root.innerHTML = html;
 
+        </script>
 
-        <td valign ="top">
-            <button>Collapse All</button>
-<button>View Progress</button>
-<select>
-    <option>Publish All</option>
-    <option>Publish All Items And Modules</option>
-    <option>Unpublish</option>
-</select>
-<button>+ Module</button>
-
-
-<hr/>
-<ul>
-  <li>week 0
-    <ul>
-      <li>Learning Objectives
-          <ul>
-              <li>intro to the course</li>
-              <li>intro to the course</li>
-              <li>intro to the course</li>
-          </ul>
-      </li>
-      <li>Readings
-          <ul>
-              <li>Readings</li>
-              <li>Readings</li>
-              <li>Readings</li>
-          </ul>
-      </li>
-      <li>Slides
-          <ul>
-              <li>Slides</li>
-              <li>Slides</li>
-              <li>Slides</li>
-          </ul>
-      </li>
-  </ul>
-  <li>week 1
-    <ul>
-      <li>Learning Objectives
-          <ul>
-              <li>intro to the course</li>
-              <li>intro to the course</li>
-              <li>intro to the course</li>
-          </ul>
-      </li>
-      <li>Readings
-          <ul>
-              <li>Readings</li>
-              <li>Readings</li>
-              <li>Readings</li>
-          </ul>
-      </li>
-      <li>Slides
-          <ul>
-              <li>Slides</li>
-              <li>Slides</li>
-              <li>Slides</li>
-          </ul>
-      </li>
-  </ul>
-  </li>
-  <li>week 2
-    <ul>
-      <li>Learning Objectives
-          <ul>
-              <li>intro to the course</li>
-              <li>intro to the course</li>
-              <li>intro to the course</li>
-          </ul>
-      </li>
-      <li>Readings
-          <ul>
-              <li>Readings</li>
-              <li>Readings</li>
-              <li>Readings</li>
-          </ul>
-      </li>
-      <li>Slides
-          <ul>
-              <li>Slides</li>
-              <li>Slides</li>
-              <li>Slides</li>
-          </ul>
-      </li>
-  </ul>
-  </li>
-  <li>week 3
-    <ul>
-      <li>Learning Objectives
-          <ul>
-              <li>intro to the course</li>
-              <li>intro to the course</li>
-              <li>intro to the course</li>
-          </ul>
-      </li>
-      <li>Readings
-          <ul>
-              <li>Readings</li>
-              <li>Readings</li>
-              <li>Readings</li>
-          </ul>
-      </li>
-      <li>Slides
-          <ul>
-              <li>Slides</li>
-              <li>Slides</li>
-              <li>Slides</li>
-          </ul>
-      </li>
-  </ul>
-  </li>
-  <li>week 4
-    <ul>
-      <li>Learning Objectives
-          <ul>
-              <li>intro to the course</li>
-              <li>intro to the course</li>
-              <li>intro to the course</li>
-          </ul>
-      </li>
-      <li>Readings
-          <ul>
-              <li>Readings</li>
-              <li>Readings</li>
-              <li>Readings</li>
-          </ul>
-      </li>
-      <li>Slides
-          <ul>
-              <li>Slides</li>
-              <li>Slides</li>
-              <li>Slides</li>
-          </ul>
-      </li>
-  </ul>
-  </li>
-</ul>
-        </td>
-        <td valign="top">
-            <h4>Course Status</h4>
-            <ul>
-                <li><a href="#">coursestatus</a></li>
-                <li><a href="#">coursestatus</a></li>
-                <li><a href="#">coursestatus</a></li>
-                <li><a href="#">coursestatus</a></li>
-                <li><a href="#">coursestatus</a></li>
-            </ul>
-        
-            <h4>Coming Up</h4>
-            <ul>
-                <li><a href="#">comingup</a></li>
-                <li><a href="#">comingup</a></li>
-                <li><a href="#">comingup</a></li>
-                <li><a href="#">comingup</a></li>
-            </ul>
-        </td>
-
-        
-    </tr>
-    </table>
+</body>
+</html>
 

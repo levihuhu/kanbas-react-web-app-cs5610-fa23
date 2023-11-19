@@ -1,0 +1,61 @@
+.btn-danger {
+    background-color: red;
+    /* ... other styles */
+}
+
+.btn-success {
+    background-color: green;
+    /* ... other styles */
+}
+.container {
+    display: left;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 30px auto;
+    margin-left: 0; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.input {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.label {
+    align-self: flex-start;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.textarea {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 80px;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+

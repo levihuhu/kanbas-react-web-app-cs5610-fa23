@@ -1,59 +1,25 @@
-<table border = "1" width = "100%" >
-    <tr>
-        <td  valign = "top">
-              <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/DashBoard/screen.html">DashBoard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li> 
-                <li><a  href="#">Calendar</a></li>  
-                <li><a  href="#">Inbox</a></li>  
-                <li><a   href="#">History</a></li>  
-                <li><a   href="#">Studio</a></li>  
-                <li><a  href="#">Communication</a></li>  
-                <li><a  href="#">help</a></li>  
-              
-                
+<html>
 
-        </td>
-        <td   valign = "top" >
-                  <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li> 
-                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li> 
-                <li><a  href="#">Zoom</a></li>  
-                <li><a  href="#">Piazza</a></li>  
-                <li><a  href="#">People</a></li>  
-                <li><a  href="#">Rubircs</a></li>
-                <li><a  href="#">Files</a></li>  
-                <li><a  href="#">Pages</a></li>    
-        </td>
+    <head>
+  <link rel="stylesheet" href= "/styles.css" />
+  <link rel="stylesheet" href= "/Kanbas/KanbasNavigation/index.css" />
+  <link rel="stylesheet" href= "/Kanbas/Courses/CourseNavigation/index.css" />
+  <link rel = "stylesheet" href = "/lib/font-awsome/css/font-awesome.css">
+  <link rel="stylesheet" href= "/lib/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href= "/Kanbas/Account/Profile/index.css" />
+    </head>
+    <body >
+
+        <div id = "root"></div>
+        <script type = "module">
+           import Home from "./Home.js";
+           const html = Home();
+           const root = document.getElementById("root");
+              root.innerHTML = html;
+
+        </script>
+
+</body>
+</html>
 
 
-
-<td>
-    <ul> 
-        <li><strong>Name:</strong> Wenhu Cheng</li></br>
-        
-        <li>
-            <strong>Contact:</strong>
-            <p>pls contact me at [Your email or phone number here]</p>
-        </li>
-        
-        <li>
-            <strong>Biography:</strong>
-            <p>I am looking for a SDE job.</p>
-        </li>
-        
-        <li>
-            <strong>Links:</strong>
-            <a href="https://chat.openai.com/c/6c74475b-f7a4-44c0-81cf-b99b04faf40a">YouTube</a>
-        </li>
-    </ul>
-    
-    <center>
-        <form action="/Kanbas/Account/Profile/EditProfile/screen.html">
-            <button>edit profile</button>
-        </form>
-    </center>
-    
-</td>
