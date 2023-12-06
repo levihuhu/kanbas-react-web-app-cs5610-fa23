@@ -43,7 +43,7 @@ function Project() {
                 <Route path="/search/:search" element={<Search />} />
                 <Route path="/details/:albumId" element={<Details />} />
                 <Route path="/admin/users" element={<UserList />} />
-                <Route path="/users" element={<UserList />} />
+              
 
      
 
