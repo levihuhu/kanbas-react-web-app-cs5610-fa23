@@ -10,6 +10,8 @@ const request = axios.create({
 
 export const signin = async (credentials) => {
     const response = await request.post(`${USERS_API}/signin`, credentials);
+    console.log(USERS_API);
+   
     return response.data;
 }
 
